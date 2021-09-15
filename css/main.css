@@ -14,6 +14,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 html {
   overflow-x: hidden;
 }
@@ -2535,3 +2537,83 @@ footer .menu li a:hover{
 #copyright .nav-inline .nav-link:hover{
 	color: #54775E;
 }
+
+
+.marq1{
+  
+  overflow: hidden;
+  white-space: nowrap;
+   font-size: 1em;
+ color: blue;
+}
+
+.marq1 h3 {
+  display: inline-block;
+   font-size: 1em;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.marq2 {
+ height: 50px;	
+ ;overflow: auto;
+ position: relative;
+}
+.marq2 h3 {
+ font-size: 1em;
+ color: blue;
+ position: absolute;
+ wwidth: 150%;
+ white-space:nowrap
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: left;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: marq2 20s linear infinite;
+ -webkit-animation: marq2 20s linear infinite;
+ animation: marq2 20s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes marq1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes marq1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes marq1 {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
