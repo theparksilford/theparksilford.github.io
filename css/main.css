@@ -128,7 +128,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 /* ==========================================================================
    2.2 Buttons
    ========================================================================== */
-.btns {
+.btn {
   font-size: 14px;
   padding: 10px 30px;
   border-radius: 30px;
@@ -140,7 +140,10 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   display: inline-block;
-  word-wrap: break-word;
+  overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: pre-line;
+
 }
 
 .btn:focus,
@@ -163,7 +166,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .btn-effect {
-  overflow: hidden;
+  overflow: visible;
 }
 
 .btn-effect:after {
