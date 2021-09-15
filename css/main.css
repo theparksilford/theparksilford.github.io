@@ -1679,7 +1679,7 @@ button:focus {
 }
 
 #carousel-area .carousel-item .carousel-caption h2 {
-  font-size: 80px;
+  font-size: 9.0vmin;
   font-weight: 700;
   color: #fff;
 }
