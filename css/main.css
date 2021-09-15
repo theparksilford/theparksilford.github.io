@@ -1662,10 +1662,7 @@ button:focus {
   background-size: 100%;
 }
 
-#carousel-area .carousel-item img {
-  width:100%;
-  max-height:90vh;
-}
+
 #carousel-area .carousel-item .carousel-caption {
   top: 32%;
   right: 10%;
