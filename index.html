@@ -3,9 +3,8 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
     <meta name="keywords" content="The Parks Ilford Management Company">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <meta name="author" content="The Parks Ilford Management Team">
     <link rel="canonical" href="https://theparksilford.org.uk">
@@ -25,6 +24,39 @@
 
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/main.css">
+    <style>
+      /* Reflow table for mobile */
+      @media (max-width: 767px) {
+        .table-reflow thead {
+          border: none;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px;
+        }
+
+        .table-reflow tr {
+          border-bottom: 3px solid #00bcd4;
+          display: block;
+          margin-bottom: .625em;
+        }
+
+        .table-reflow td {
+          border-bottom: 1px dotted #ccc;
+          display: block;
+          text-align: right;
+        }
+
+        .table-reflow td::before {
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -32,11 +64,10 @@
     <header id="slider-area">
       <nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="img/tpilogo.png"alt="logo"></a>
+          <a class="navbar-brand" href="index.html"><img src="img/tpilogo.png" alt="The Parks Ilford Logo" style="height: 50px;"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
-          <!-- HTML -->	
             
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
@@ -44,13 +75,13 @@
                 <a class="nav-link page-scroll" href="#slider-area">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#services">About Us</a>
+                <a class="nav-link page-scroll" href="#about">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#directors">Directors</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#Contracts">Contracts</a>
+                <a class="nav-link page-scroll" href="#contracts">Contracts</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#bulkwaste">Bulk Waste</a>
@@ -85,7 +116,7 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img src="img/slider/himg.jpeg" width="100%"  alt="">
+              <img src="img/slider/himg.jpeg" width="100%"  alt="View of The Parks Ilford estate">
               <div class="carousel-caption text-left">
                 <h3 class="wow fadeInRight" data-wow-delay="0.2s">Welcome To</h1>
                 <h2 class="wow fadeInRight" data-wow-delay="0.4s">The Parks - Ilford</h2>
@@ -93,7 +124,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/slider/himg2.jpeg" width="100%"  alt="">
+              <img src="img/slider/himg2.jpeg" width="100%"  alt="A sunny day at The Parks Ilford">
               <div class="carousel-caption text-center">
                 <h3 class="wow fadeInDown" data-wow-delay="0.3s">Located in</h3>
                 <h2 class="wow bounceIn" data-wow-delay="0.6s">Ilford</h2>
@@ -101,7 +132,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/slider/himg3.jpeg" width="100%"  alt="">
+              <img src="img/slider/himg3.jpeg" width="100%"  alt="Residential buildings at The Parks Ilford">
               <div class="carousel-caption text-center">
                 <h2 class="wow fadeInRight" data-wow-delay="0.6s">212 Properties</h2>
                 <h4 class="wow fadeInUp" data-wow-delay="0.6s">57 houses, 103 flats and 52 social housing flats</h4>
@@ -120,27 +151,26 @@
         </div>
       </div>
 <div class="marq1">
-            <h3>News: 20/12/2023 Closing of year 2022-2023 now finalized, see the documents section</h3>
+            <h3>News: 29/03/2025 Closing of year 2023-2024 now finalized, see the documents and faq section</h3>
             </div>
 
 
     <!-- Services Section Start -->
-    <section id="services" class="section">
+    <section id="about" class="section">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">About Us</h2>
           <span>About Us</span>
-          <br>
-          <p>The Parks (Ilford) Management Company is a Residents’ Management Company (RMC) that has been formed to protect the interests of leaseholders of the private residential estate, The Parks (Ilford). The company consists of members(Leaseholders and freeholders). <b>There are 212 members.</b> consisting of 57 houses, 103 flats and 52 social housing flats.<br> <a href="https://find-and-update.company-information.service.gov.uk/company/04821101/"> <b>Read More on Companies House Website </b></a>
-<br><br>
-The RMC is responsible for the management and maintenance of the buildings/estate, as well as compliance with the obligations of the lease and a range of statutory requirements (subject to the lease structure). The directors of the estate, who are unpaid and appointed by the members, decide how best to achieve this by appointing a professional managing agent.
-</p>
-<br>
-<p><i><b> Managing Agent</b></i></p>
-<p>The managing agent is a company that is appointed by the directors to manage the estate. They manage leases, transfers, contracts and general upkeep and repair of the estate. On the direction of the directors, they arrange insurance, contracts for cleaning and ground maitenance and other day to day activities for repairs.<br><br>
-Our current Managing Agent is Red Rock Property Management<br> <a href="https://www.rrpm.co.uk/ "> <b>https://www.rrpm.co.uk/</b> </a>
-</p>
+          <p class="section-subtitle">The Parks (Ilford) Management Company is a Residents’ Management Company (RMC) that has been formed to protect the interests of leaseholders of the private residential estate, The Parks (Ilford). The company consists of members (Leaseholders and freeholders). <strong>There are 212 members.</strong> consisting of 57 houses, 103 flats and 52 social housing flats. <a href="https://find-and-update.company-information.service.gov.uk/company/04821101/"><strong>Read More on Companies House Website</strong></a></p>
+          <p class="section-subtitle">The RMC is responsible for the management and maintenance of the buildings/estate, as well as compliance with the obligations of the lease and a range of statutory requirements (subject to the lease structure). The directors of the estate, who are unpaid and appointed by the members, decide how best to achieve this by appointing a professional managing agent.</p>
+        </div>
 
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <h3 class="mb-3"><em><strong>Managing Agent</strong></em></h3>
+            <p>The managing agent is a company that is appointed by the directors to manage the estate. They manage leases, transfers, contracts and general upkeep and repair of the estate. On the direction of the directors, they arrange insurance, contracts for cleaning and ground maitenance and other day to day activities for repairs.</p>
+            <p>Our current Managing Agent is Red Rock Property Management: <a href="https://www.rrpm.co.uk/"><strong>https://www.rrpm.co.uk/</strong></a></p>
+          </div>
         </div>
 
       </div>
@@ -236,74 +266,62 @@ Our current Managing Agent is Red Rock Property Management<br> <a href="https://
           <span>Contracts</span>
           </div>
           <br>
-          <p><b>Cleaning:</b> <br>Avalon Maintenance is our current cleaning contractor. Their cleaning schedule are as follows<br>
+          <div class="mb-4">
+            <h4><strong>Cleaning</strong></h4>
+            <p>Avalon Management is our current cleaning contractor. Their cleaning schedule are as follows:</p>
+            <ul class="list-unstyled ml-3">
+              <li><strong>Tuesday:</strong> Cleaning of Blocks and Bin rooms cleaning</li>
+            </ul>
+          </div>
 
+          <div class="mb-4">
+            <h4><strong>Ground Maintenance</strong></h4>
+            <p>Avalon Management also provide service for Ground Maintenance. Their ground maintenance schedule is <strong>alternate week (Wedneday)</strong>. The council also look after few green areas/trees, <a href="images/4E421773-6386-4930-A20A-08A27EACE3DC.jpeg">please see the map</a>.</p>
+          </div>
 
-          <p style="margin-left: 10px;">
-          
-<b>Tuesdays:</b> Estate litter picking, thorough cleaning of Blocks, Bin Area rearrangements.<br></p>
- 
-</p>
-</p>
-<br>
-<p>
-<b>Ground Maitenance:</b><br> Avalon also provide service for Ground Maintenance too. Thier ground maintenance schedule is<b> alternate week (Wednesdays)</b><br/>
-Council also look after few green areas/trees, 
-  <a href="images/4E421773-6386-4930-A20A-08A27EACE3DC.jpeg">please see the map</a> 
-  
-  
-</p>
-<br>
-<p>
-<b>Managing Agent:</b><br> Red Rock Property Management is our new Management Agent. They will be collecting service charges and providing help to the Management company for the upkeep of the Estate.</b>
-</p>
-<br>
-<p>
-<b>Service Charge Late Fee:</b><br> 
-<p>Red Rock Property Management will be collecting service charges every year once the budget details are issued in July or when the year accounting is closed. You are encouraged to pay the service charge amount in full, however, we understand that not everyone can pay the whole year service charge in one go so you can  arrange monthly payment with RR. You have to call them and arrange the monthly payment, Ideally with direct debit.</p>
-<p>If you fail to pay the service charge amount on time, late fee will be issued however following process will be adapted, regardless you pay monthly or yearly.
+          <div class="mb-4">
+            <h4><strong>Managing Agent</strong></h4>
+            <p>Red Rock Property Management is our new Management Agent. They will be collecting service charges and providing help to the Management company for the upkeep of the Estate.</p>
+          </div>
 
- 
-<ol>
-<li>Issue the demand and obligatory summary of rights</li>
-<li>Reminder letter issued circa 14 days after due date</li>
-<li>Late payment penalty letter one (1) issued on or around 14 days after the initial reminder letter with a minimum charge of £75 + VAT</li>
-<li>Late payment penalty letter two (2) issued on or around 14 days after the letter one (1) with a minimum charge of £125 + VAT</li>
+          <div class="mb-4">
+            <h4><strong>Service Charge Late Fee</strong></h4>
+            <p>Red Rock Property Management will be collecting service charges every year once the budget details are issued in July or when the year accounting is closed. You are encouraged to pay the service charge amount in full, however, we understand that not everyone can pay the whole year service charge in one go so you can arrange monthly payment with RR. You have to call them and arrange the monthly payment, Ideally with direct debit.</p>
+            <p>If you fail to pay the service charge amount on time, a late fee will be issued. The following process will be adapted, regardless if you pay monthly or yearly:</p>
+            <ol>
+              <li>Issue the demand and obligatory summary of rights.</li>
+              <li>Reminder letter issued circa 14 days after due date.</li>
+              <li>Late payment penalty letter one (1) issued on or around 14 days after the initial reminder letter with a minimum charge of £75 + VAT.</li>
+              <li>Late payment penalty letter two (2) issued on or around 14 days after the letter one (1) with a minimum charge of £125 + VAT.</li>
+              <li>Referral fee letter three (3) issued on or around 14 days after the letter two (2) with a minimum charge of £200 + VAT and account passed on to third party debt recovery.</li>
+            </ol>
+          </div>
 
-<li>Referral fee letter three (3) issued on or around 14 days after the letter two (2) with a minimum charge of £200 + VAT and account passed on to third party debt recovery</li>
-</ol>
-</p>
-<br>
-<p>
-<b>Car Park Management:</b><br><a href="https://www.nationalparkingcontrol.co.uk/">National Parking Control</a> is patrolling all the marked bays. All car, parked in the bay,should display Permanent Resident Parking Permit  or Visitor Parking Permit</b>
-    
+          <div class="mb-4">
+            <h4><strong>Car Park Management</strong></h4>
+            <p><a href="https://www.nationalparkingcontrol.co.uk/">National Parking Control</a> is patrolling all the marked bays. All cars parked in a bay should display a Permanent Resident Parking Permit or Visitor Parking Permit.</p>
+            <ol>
+                <li>Everyone should have received physical Parking Permits, which is only useful in your own bay. If you didn't, please contact Redrock.</li> 
+                <li>Please join the Whatsapp group to keep in touch about these changes (see the bottom of this page).</li> 
+            </ol>
+            <p>We have given permission to the parking company to issue tickets only to vehicles parked in the marked bays. If any resident received a parking ticket because they had an expired permit, never received a letter/visitor permit, or received tickets while parked in open areas, please provide the PCN details to <a href="mailto:jeremy.doran@rrpm.co.uk">jeremy.doran@rrpm.co.uk</a> to get it canceled. Please copy directors too: <a href="mailto:Management.Team@theparksilford.org.uk">Management.Team@theparksilford.org.uk</a>.</p>
+            <p>Only the parking bays will be looked after by NPC. Illegal parking, dangerous parking etc., should be reported to the Council or Police. Please be considerate when parking in open areas or in front of houses.</p>
+            <p><a href="./docs/NPC Client Brochure.pdf" target="_blank">Click here for NPC flyer</a></p>
+            <p><a href="./docs/TheParksSiteplan.pdf" target="_blank">Click here for the Site map which shows plots and parking bays</a></p>
+            <p><a href="./docs/parkingmap.xlsx" target="_blank">Click here for the mapping between which bay belongs to which property</a></p>
+          </div>
 
-    <ol>
-        <li>Everyone should have received physical Parking Permits, which is only useful in your own bay. If you didn't, please contact Redrock</li> 
-        <li>Please join the Whatsapp group to keep in touch about these changed. see the bottom of this page</li> 
-    </ol>
-    <p>We have given permission to the parking company to issue tickets only to the vehicles parked in the marked bay. Any resident who received the parking ticket because they had expired permit and never received letter/visitor permit or received tickets while parked in open areas, Please provide the PCN details to jeremy.doran@rrpm.co.uk to get it canceled. Please copy directors too Management.Team@theparksilford.org.uk.</p>
-    <br/>
-    <p>Only the parking bays will be looked after by NPC, illegal parking, dangerous parking etc, should be reported to Council or Police. Please be considerate when parking in open areas or in front of houses.</p>
-    <p> <a href="./docs/NPC Client Brochure.pdf" target="_blank">Click here for NPC flyer</a></p>
-    <p> <a href="./docs/TheParksSiteplan.pdf" target="_blank">Click here for the Site map which shows plots and parking bays</a></p>
-    <p> <a href="./docs/parkingmap.xlsx" target="_blank">Click here for the mapping between which bay belongs to which property</a></p>
-
-</p>
-
-<br>
-<p>
-<b>Rubbish Collection:</b><br>Redbridge council is responsible to pickup the rubbish from the bin stores as well as bins they provided to the houses</b>
-    
-
-    <ol>
-    <li>Council clears the big bins in Bin stores twice a week. Monday and Thursday</li>
-    <li>Council collects small bins from individual houses (if provided) once a week, Every Friday</li>
-    <li>Other collections like recycling or gardens also available, please see council's website and complain if they don't visit you</li>
-    <li>Houses should not use the Bin stores, if they are provided the bins by the council. You can ask for bigger bin or additional bins, if the one provided to you is not enough, <a href="https://www.redbridge.gov.uk/new-wheelie-bin-rubbish-collection/bin-sizes/" >Click here</a> </li>
-    </ol>
-    <p>Please be careful when you use the bin stores. The domesteic rubbish must be in plastic bags, and put correctly inside the bins (not on the floor). Close the door when you are done, or when you see it opened. Please do not put any recycling items/bulk rubbish/electrical items etc in the bin store. It will be treated as Bulk Rubbish and you will face the fine. Read the bulk rubbish section on how to get rid of it.</p>
-</p>
+          <div class="mb-4">
+            <h4><strong>Rubbish Collection</strong></h4>
+            <p>Redbridge council is responsible for picking up the rubbish from the bin stores as well as bins they provided to the houses.</p>
+            <ol>
+              <li>Council clears the big bins in Bin stores twice a week (Monday and Thursday).</li>
+              <li>Council collects small bins from individual houses (if provided) once a week (Every Friday).</li>
+              <li>Other collections like recycling or gardens are also available. Please see the council's website and complain if they don't visit you.</li>
+              <li>Houses should not use the Bin stores if they are provided bins by the council. You can ask for a bigger bin or additional bins if the one provided is not enough. <a href="https://www.redbridge.gov.uk/new-wheelie-bin-rubbish-collection/bin-sizes/" >Click here for more info</a>.</li>
+            </ol>
+            <p>Please be careful when you use the bin stores. Domestic rubbish must be in plastic bags and put correctly inside the bins (not on the floor). Close the door when you are done, or when you see it opened. Please do not put any recycling items, bulk rubbish, electrical items, etc., in the bin store. It will be treated as Bulk Rubbish and you will face a fine. Read the bulk rubbish section on how to get rid of it.</p>
+          </div>
 
       </div>
 
@@ -318,29 +336,29 @@ Council also look after few green areas/trees,
           <span>Bulk Waste</span>
         </div>
           <br>
-          <p>The Parks (Ilford) is a private residential estate. This means council do not pick up the bulk refusal items like Fridge, Furniture, Sofa and Beds.<b> It is illegal to dump the bulk rubbish</b> and it costs money to all of us as we arrange private contractors to pick them up. In financial year 2018 and 2019,<b> we paid in excess of £30,000 each year. </b> Now that the CCTV cameras are operational, we have started charging the residence who found to be dumping the bulk items.<br><br>
+          <p>The Parks (Ilford) is a private residential estate. This means the council does not pick up bulk refusal items like fridges, furniture, sofas, and beds. <strong>It is illegal to dump bulk rubbish</strong>, and it costs all of us money as we must arrange private contractors to pick it up. In the financial years 2018 and 2019, <strong>we paid in excess of £30,000 each year</strong>. Now that CCTV cameras are operational, we have started charging residents found to be dumping bulk items.</p>
 
-<b><h4>How to arrange Bulk Waste:</h4></b>
-If possible, drive to the tip and take your items there in your car. Google "Redbridge Tip".<br>Redbridge council also allows residents to arrange the large item collection for free <a href=" https://www.redbridge.gov.uk/bins-waste-and-recycling/book-a-bulky-waste-or-large-item-collection/"> <b>Click Here</b> </a>. 
-You can also arrange the pickup with Heart Foundation<a href="https://www.bhf.org.uk/shop/donating-goods/book-furniture-collection-near-me"> <b>(Click Here)</b> </a> or find a Bulk Waste Company online.
+          <h4 class="mt-4">How to arrange Bulk Waste collection:</h4>
+          <p>If possible, drive to the tip and take your items there in your car (Google "Redbridge Tip").</p>
+          <p>Redbridge council also allows residents to arrange large item collection for free: <a href=" https://www.redbridge.gov.uk/bins-waste-and-recycling/book-a-bulky-waste-or-large-item-collection/"><strong>Click Here</strong></a>.</p>
+          <p>You can also arrange a pickup with the British Heart Foundation <a href="https://www.bhf.org.uk/shop/donating-goods/book-furniture-collection-near-me"><strong>(Click Here)</strong></a> or find a Bulk Waste Company online.</p>
 
+          <p>Please follow these steps:</p>
+          <ol>
+            <li>Book the collection with the council, Heart Foundation, or a private company.</li>
+            <li>The night before the collection date, place the item outside your house or near the bin area (if you live in a flat).</li>
+            <li>Make sure proper notices are affixed to the bulk waste items. Affix the collection confirmation letter/details as well as your address so everyone is aware that it will be collected.</li>
+          </ol>
+          <p>Please make sure you don’t put items out before the collection date and always post the confirmation document/property address so everyone is aware of it.</p>
 
-Please follow these steps:
-<ol>
-  <li>Book the collection with the council/Heart Foundation/Private. </li>
-  <li> A night before the collection date, place the item outside the house or near bin area (if live in flats)</li>
-  <li> Make sure proper notices are affixed on the bulk waste items. Affix the collection confirmation letter/details as well as your address so everyone is aware that it will be collected by council.</li>
-</ol>
-Please make sure you don’t put the items outside before the collection date and always post the confirmation document/property address so everyone is aware of it.
-</p>
-    <p>Since the CCTV cameras are now activated, 
-    <ol>
-        <li>We will start issuing the fine (minimum £100), once we identify the people throwing stuff. This charge will be added to the service charge.
-    Please read the <a href="./docs/BulkRubbishProcess.pdf"> <b>process document </b></a>. Home owners, please make sure your renters are aware of it.</li>
-    <li>We will send the CCTV recording and evidence/person details to the council who will also take actions as per the law, this include crimimal prosecution as well as fine/penalty by the council</li>
-    </ol>
-    
-    </p>
+          <div class="alert alert-warning mt-4" role="alert">
+            <h4 class="alert-heading">Important Notice Regarding CCTV</h4>
+            <p>Since the CCTV cameras are now activated:</p>
+            <ol>
+              <li>We will issue a fine (minimum £100) once we identify people dumping items. This charge will be added to the service charge. Please read the <a href="./docs/BulkRubbishProcess.pdf" class="alert-link"><strong>process document</strong></a>. Homeowners, please make sure your renters are aware of this.</li>
+              <li>We will send the CCTV recording and evidence/person details to the council, who will also take action as per the law. This may include criminal prosecution as well as a fine/penalty by the council.</li>
+            </ol>
+          </div>
     
         </div>
       </section>
@@ -358,16 +376,16 @@ Please make sure you don’t put the items outside before the collection date an
           <div id="accordion">
           
            <div class="card">
-    <div class="" id="headingOne">
+    <div class="card-header" id="newsHeadingOne">
       <h5 class="mb-0">
-        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#newsCollapseOne" aria-expanded="true" aria-controls="newsCollapseOne">
           Residents' Meeting by Red Rock
           <br><small>1-sep-2021</small>
         </button>
      </h5>
     </div>
 
-    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+    <div id="newsCollapseOne" class="collapse " aria-labelledby="newsHeadingOne" data-parent="#accordion">
       <div class="card-body">
       <p>Red Rock Estate and Property Management Ltd are the appointed Managing Agents for The Parks (Ilford) Management Company Limited.<br>
       This meeting will give us a chance to introduce ourselves and discuss our plans for the development, it will also give you as the residents a chance to air your views and discus any issues you may be experiencing.
@@ -381,49 +399,49 @@ The meeting will be held via zoom on Tuesday 28th September @ 6:00pm, if you or 
   
   
   <div class="card">
-    <div class="" id="headingOne">
+    <div class="card-header" id="newsHeadingTwo">
       <h5 class="mb-0">
-        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#newsCollapseTwo" aria-expanded="false" aria-controls="newsCollapseTwo">
           CCTV commissioned
            <br><small>1-sep-2021</small>
         </button>
       </h5>
     </div>
 
-    <div id="collapseOne1" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+    <div id="newsCollapseTwo" class="collapse " aria-labelledby="newsHeadingTwo" data-parent="#accordion">
       <div class="card-body">
       CCTV solution has been approved by the directors. SMS was awarded the contract to install the new CCTC camera solution. There will be 18 cameras around the estate, old cameras will be removed.
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="" id="headingTwo">
+    <div class="card-header" id="newsHeadingThree">
       <h5 class="mb-0">
-        <button class="btn btn-link"style="text-align:left;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#newsCollapseThree" aria-expanded="false" aria-controls="newsCollapseThree">
           RedRock is our new Managing Agent <br>
           <small>1-June-2021</small>
         </button>
       </h5>
     </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+    <div id="newsCollapseThree" class="collapse" aria-labelledby="newsHeadingThree" data-parent="#accordion">
       <div class="card-body">
-        The new directors have finalised and approved a new Managing Agent to take care of the estate. Red Rock Property Management will take the charge of the estate from July 2021.  <a href="https://www.rrpm.co.uk/ "> <b>https://www.rrpm.co.uk/</b> </a>
+        The new directors have finalised and approved a new Managing Agent to take care of the estate. Red Rock Property Management will take the charge of the estate from July 2021.  <a href="https://www.rrpm.co.uk/ "> <strong>https://www.rrpm.co.uk/</strong> </a>
 
       </div>
     </div>
   </div>
   <div class="card">
-    <div class="" id="headingThree">
+    <div class="card-header" id="newsHeadingFour">
       <h5 class="mb-0">
-        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#newsCollapseFour" aria-expanded="false" aria-controls="newsCollapseFour">
           AGM 2021
            <br><small>1-Apr-2021</small>
         </button>
       </h5>
     </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+    <div id="newsCollapseFour" class="collapse" aria-labelledby="newsHeadingFour" data-parent="#accordion">
       <div class="card-body">
-        After long time, the AGM was finally conducted by JPW. In the AGM, new directors were decided along with the decision that the Managing Agent will be changed. <a href="./docs/The Parks - AGM Minutes 23.04.21.pdf "> <b>Download the minutes</b> </a> 
+        After long time, the AGM was finally conducted by JPW. In the AGM, new directors were decided along with the decision that the Managing Agent will be changed. <a href="./docs/The Parks - AGM Minutes 23.04.21.pdf "> <strong>Download the minutes</strong> </a> 
 
       </div>
     </div>
@@ -438,19 +456,19 @@ The meeting will be held via zoom on Tuesday 28th September @ 6:00pm, if you or 
           <h2 class="section-title">Frequenty Asked Questions</h2>
           <span>F.A.Q</span>
         </div>
-          <div id="faq1accordion">
+          <div id="faqAccordion">
           
            <div class="card">
-    <div class="" id="faq1">
+    <div class="card-header" id="faqHeadingOne">
       <h5 class="mb-0">
-        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#faq1collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
           Understanding Budget document
            <br><small>06-Nov-2021</small>
         </button>
      </h5>
     </div>
 
-    <div id="faq1collapseOne" class="collapse " aria-labelledby="faq1" data-parent="#faq1accordion">
+    <div id="faqCollapseOne" class="collapse " aria-labelledby="faqHeadingOne" data-parent="#faqAccordion">
       <div class="card-body">
       <p>There is many types of expenses, some apply to flats, some to houses. In summary we have 3 heads.
       <ol>
@@ -458,15 +476,13 @@ The meeting will be held via zoom on Tuesday 28th September @ 6:00pm, if you or 
         <li><b>Block Level Charges</b>: This is paid by flat owners, including the block G but not inclduing social housing. There are 103 flats, however breakup is not even, please see this <a href="./docs/Apportionments.pdf"> <b>Document</b></a></li>
         <li><b>Block G Charges</b>: This is paid by Block G owners only. There are 28 properties.</li>
       </ol>
-      
       </p>
       <p>Management Agent fee is not equally divided. Houses and Social Housing pays £60 while rest of the charges paid by 101 flats using the block level charges calcultion.<br>
       Depending upon your property, the specific sections in the budget will apply to you. All numbers are rounded up to a £.
         </p>
         You can also download this Excel sheet to see the calculation yourself and use it for next year budgets.<a href="./docs/BudgetPortionCalculator.xlsx"> <b>Download worksheet</b></a>
 
-        <br>
-<b>Budget calculation for Houses or Social housing flats</b>
+        <h5 class="mt-3">Budget calculation for Houses or Social housing flats</h5>
 <p>
 if you are a <b>house owner or resident of Social Housing</b>, following sections will apply,
 </p>
@@ -485,8 +501,7 @@ if you are a <b>house owner or resident of Social Housing</b>, following section
 </p>
 </li>
 </ol>
-<br><br>
-<b>Budget calculation for flats (not Block G)</b>
+<h5 class="mt-3">Budget calculation for flats (not Block G)</h5>
 <p>
 If you are a <b>leaseholder of a flat</b> then</p>
 <ol>
@@ -512,10 +527,7 @@ This means for a flat leaseholder, the budget 2021 will be <b>£335+£898+£5+£
 </li>
 
 </ol>
-<br><br>
-
-
-<b>Budget calculation for flats in Block G</b>
+<h5 class="mt-3">Budget calculation for flats in Block G</h5>
 <p>If you are a <b>Block G flat leaseholder</b> then</p>
 <ol>
 
@@ -552,23 +564,18 @@ This means for a Block G flat leaseholder, the budget 2021 will be <b>£335+£10
       </p>
       </div>
     </div>
-  </div>
-  
-  </div>
-  
-   <div id="faq2accordion">
-          
-           <div class="card">
-    <div class="" id="faq2">
+  </div>           
+  <div class="card">
+    <div class="card-header" id="faqHeadingTwo">
       <h5 class="mb-0">
-        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#faq2collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
           Why am i paying so much for service charge?
            <br><small>06-Nov-2021</small>
         </button>
      </h5>
     </div>
 
-    <div id="faq2collapseOne" class="collapse " aria-labelledby="faq1" data-parent="#faq2accordion">
+    <div id="faqCollapseTwo" class="collapse " aria-labelledby="faqHeadingTwo" data-parent="#faqAccordion">
       <div class="card-body">
       <p>The details explanation of service charges are defined in the FAQ of Budget Document. However, The service charges have been rising for past 3-4 years. We have been paying every year budget amount in July and then at the fiancial year end, we pay some more (in december when the year is closed) due to expenditure overshooting the budget. The main reasons for it was JPW, our previous Management company, which increased their Management Fee from 26k to 52k, as well as Bulk Rubbish which costed us £30k every year for past 3 years. You can read more in year end financial document under Documents Section</p>
       <p> The new Directors and the Management company are trying to decrease the amount we are paying all together by decreasing the cost, get more services like CCTV without increasing the budget amount and get the repair/services down as cheaply as possible. This may produce slight underpar services, but its a fine line we are trying to tread</p>
@@ -576,383 +583,250 @@ This means for a Block G flat leaseholder, the budget 2021 will be <b>£335+£10
       <p> We are hoping to see the positive results when year 2021 ends in June 2022 and next budget is annouced in July 2022</p>
       <p><b>Note: Financial Year July-2020 - June 2021 is not closed yet by JPW. When they do, we are expecting the additional payment would be needed due to budget overshoot (we know they have been doing it for past 3 years). We will try to go through the invoices and documents when available to us and challenge it where applicable, however, this additional amount is nothing to do with Red Rock or the new Directors.</b>
       </p>
-
-
-
-    
       </div>
     </div>
   </div>
-  
-  </div>
-
-   <div id="faq3accordion">
-          
-           <div class="card">
-    <div class="" id="faq3">
+  <div class="card">
+    <div class="card-header" id="faqHeadingThree">
       <h5 class="mb-0">
-        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#faq3collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
           Who do i complain if i am not happy?
           <br><small>06-Nov-2021</small>
         </button>
      </h5>
     </div>
 
-    <div id="faq3collapseOne" class="collapse " aria-labelledby="faq3" data-parent="#faq3accordion">
+    <div id="faqCollapseThree" class="collapse " aria-labelledby="faqHeadingThree" data-parent="#faqAccordion">
       <div class="card-body">
       <p>Depending on the type of complain, you would either contact with Red Rock or the Parks' Directors. Most of the time, you should contact with the Management Agent, whether its related to your service charge or cleaning/ground maintaince, door issues, Parking Permit etc etc.
       </p>
       <p>If there is an issue with the Management Agent itself and they are not acting on the issues then you should add the Directors in your communications. Please see <a href="#contact">Contact Us section</a><p>
-      
-
-
-
-    
       </div>
     </div>
   </div>
-  
-  </div>
-  
-    <div id="faq4accordion">
-          
-           <div class="card">
-    <div class="" id="faq2">
+  <div class="card">
+    <div class="card-header" id="faqHeadingFour">
       <h5 class="mb-0">
-        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#faq4collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link" style="text-align:left;" data-toggle="collapse" data-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
           How much we have paid in recent past?
-           <br><small>20-December-2023</small>
+           <br><small>29-March-2025</small>
         </button>
      </h5>
     </div>
 
-    <div id="faq4collapseOne" class="collapse " aria-labelledby="faq1" data-parent="#faq4accordion">
+    <div id="faqCollapseFour" class="collapse " aria-labelledby="faqHeadingFour" data-parent="#faqAccordion">
       <div class="card-body">
       <p>This section will be updated as we get more expenses/budgets in coming years.</p>
       
-        <p><strong>Charges for Houses</strong>&nbsp;</p>
-        <table style="border-collapse: collapse;" border="1" cellspacing="10" cellpadding="10">
-        <tbody>
-        <tr>
-        <td>
-        <p><strong>Years</strong></p>
-        </td>
-        <td>
-        <p><strong>Budget Expense</strong></p>
-        </td>
-        <td>
-        <p><strong>Year End Expense</strong></p>
-        </td>
-        <td>
-        <p><strong>Total</strong></p>
-        </td>
-        <td>
-        <p><strong>Note</strong></p>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        <p>2020-2021</p>
-        </td>
-        <td>
-        <p>443.07</p>        
-        </td>
-        <td>
-        <p>145.56</p>
-        </td>
-        <td>
-        <p>588.63</p>
-        </td>
-        <td>
-        <p>Done by JPW</p>
-        <p><a href="./docs/invoices/Budget2020/Budget2020-2021.png" target="_blank">Budget Document</a></p>
-        <p><a href="./docs/invoices/Closing 2020-2021 JPW/The Parks revised accounts 2021- Signed (1).pdf" target="_blank">Final Accounts</a></p>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        <p>2021-2022</p>
-        </td>
-        <td>
-        <p></p>
-        <p><a href="./docs/invoices/Budget2021/HousesBudget2021.png" target="_blank">400</a></p>
-        </td>
-        <td>
-        <p><a href="./docs/invoices/Closing 2021-2022 RR/HousesClosing2021-2022.png" target="_blank">7.50</a></p>
-        </td>
-        <td>
-        <p>407.5</p>
-        </td>
-        <td>
-        <p>Done by RedRock. This year includes CCTV.</p>
-        <p><a href="./docs/invoices/Budget2021/Budget21-22.pdf" target="_blank">Budget Document</a></p>
-        <p><a href="./docs/invoices/Closing 2021-2022 RR/Service Charge Accounts YE 30.06.2022.pdf" target="_blank">Final Accounts</a></p>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        <p>2022-2023</p>
-        </td>
-        <td>
-        
-        <p><a href="./docs/invoices/budget2022/HouseBudget2022.png" target="_blank">288</a></p>
-        </td>
-        <td><p><a href="./docs/invoices/Closing 2021-2022 RR/HousesClosing2021-2022.png" target="_blank">-123.48</a></p></td>
-        <td><p>164.52</p></td>
-        <td>
-        <p>Done by Red Rock.</p>   
-        <p><a href="./docs/invoices/budget2022/Budget 2022-2023.xls" target="_blank">Budget Document</a></p>
-        <p><a href="./docs/invoices/Closing 2022-2023 RR/closing 2022-2023.pdf" target="_blank">Final Accounts</a></p>
-        </td>
-        </tr>
-                <tr>
-        <td>
-        <p>2023-2024</p>
-        </td>
-        <td>
-        
-        <p><a href="./docs/Budget 2023-2024.pdf" target="_blank">232</a></p>
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>
-        <p>Done by Red Rock.</p>   
-        <p><a href="./docs/Budget 2023-2024.pdf" target="_blank">Budget Document</a></p>
-        <p><strong>Year not closed yet.</strong></p>
-        </td>
-        </tr>
-        
-		  <tr>
-        <td>
-        <p>2024-2025</p>
-        </td>
-        <td>
-        
-        <p><a href="./docs/invoices/Budget2024/HouseBudget.png" target="_blank">234.62</a></p>
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>
-        <p>Done by Red Rock.</p>   
-        <p><a href="./docs/invoices/Budget2024/HouseSplit.png" target="_blank">House Budget (Correction of management fee is not included)</a></p>
-        <p><strong>Year not closed yet.</strong></p>
-        </td>
-        </tr>
-		
-        </tbody>
+        <p><strong>Charges for Houses</strong></p>
+        <table class="table table-bordered table-striped table-reflow">
+          <thead>
+            <tr>
+              <th>Years</th>
+              <th>Budget Expense</th>
+              <th>Year End Expense</th>
+              <th>Total</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Years"><p>2020-2021</p></td>
+              <td data-label="Budget Expense"><p>443.07</p></td>
+              <td data-label="Year End Expense"><p>145.56</p></td>
+              <td data-label="Total"><p>588.63</p></td>
+              <td data-label="Note">
+                <p>Done by JPW</p>
+                <p><a href="./docs/invoices/Budget2020/Budget2020-2021.png" target="_blank">Budget Document</a></p>
+                <p><a href="./docs/invoices/Closing 2020-2021 JPW/The Parks revised accounts 2021- Signed (1).pdf" target="_blank">Final Accounts</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Years"><p>2021-2022</p></td>
+              <td data-label="Budget Expense"><p><a href="./docs/invoices/Budget2021/HousesBudget2021.png" target="_blank">400</a></p></td>
+              <td data-label="Year End Expense"><p><a href="./docs/invoices/Closing 2021-2022 RR/HousesClosing2021-2022.png" target="_blank">7.50</a></p></td>
+              <td data-label="Total"><p>407.5</p></td>
+              <td data-label="Note">
+                <p>Done by RedRock. This year includes CCTV.</p>
+                <p><a href="./docs/invoices/Budget2021/Budget21-22.pdf" target="_blank">Budget Document</a></p>
+                <p><a href="./docs/invoices/Closing 2021-2022 RR/Service Charge Accounts YE 30.06.2022.pdf" target="_blank">Final Accounts</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Years"><p>2022-2023</p></td>
+              <td data-label="Budget Expense"><p><a href="./docs/invoices/budget2022/HouseBudget2022.png" target="_blank">288</a></p></td>
+              <td data-label="Year End Expense"><p><a href="./docs/invoices/Closing 2022-2023 RR/HouseClosingYE2023.png" target="_blank">-123.48</a></p></td>
+              <td data-label="Total"><p>164.52</p></td>
+              <td data-label="Note">
+                <p>Done by Red Rock.</p>
+                <p><a href="./docs/invoices/budget2022/Budget 2022-2023.xls" target="_blank">Budget Document</a></p>
+                <p><a href="./docs/invoices/Closing 2022-2023 RR/closing 2022-2023.pdf" target="_blank">Final Accounts</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Years"><p>2023-2024</p></td>
+              <td data-label="Budget Expense"><p><a href="./docs/Budget 2023-2024.pdf" target="_blank">232</a></p></td>
+              <td data-label="Year End Expense"><a href="./docs/invoices/Closing 2023-2024 RR/HouseClosingYE2024.png" target="_blank">-64.51</a></td>
+              <td data-label="Total"><p>167.49</p></td>
+              <td data-label="Note">
+                <p>Done by Red Rock.</p>
+                <p><a href="./docs/Budget 2023-2024.pdf" target="_blank">Budget Document</a></p>
+                <p><a href="./docs/invoices/Closing 2023-2024 RR/Accounts2023-2024.pdf" target="_blank">Final Accounts</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Years"><p>2024-2025</p></td>
+              <td data-label="Budget Expense"><p><a href="./docs/invoices/Budget2024/HouseBudget.png" target="_blank">234.62</a></p></td>
+              <td data-label="Year End Expense">&nbsp;</td>
+              <td data-label="Total">&nbsp;</td>
+              <td data-label="Note">
+                <p>Done by Red Rock.</p>
+                <p><a href="./docs/invoices/Budget2024/HouseSplit.png" target="_blank">House Budget (Correction of management fee is not included)</a></p>
+                <p><strong>Year not closed yet.</strong></p>
+              </td>
+            </tr>
+          </tbody>
         </table>
-        <p>&nbsp;</p>
         <p><strong>Charges for Blocks (other than Block G)</strong></p>
-        <table style="border-collapse: collapse;" border="1" cellspacing="10" cellpadding="10">
-        <tbody>
-        <tr>
-        <td>
-        <p><strong>Years</strong></p>
-        </td>
-        <td>
-        <p><strong>Budget Expense</strong></p>
-        </td>
-        <td>
-        <p><strong>Year End Expense</strong></p>
-        </td>
-        <td>
-        <p><strong>Total</strong></p>
-        </td>
-        <td>
-        <p><strong>Note</strong></p>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        
-        
-        
-
-        <p>2020-2021</p>
-        </td>
-        <td>
-        <p>1426.68</p>
-        </td>
-        <td>
-        <p>477.87</p>
-        </td>
-        <td>
-        <p>1904</p>
-        </td>
-        <td>
-        <p>Done by JPW</p>
-        <p><a href="./docs/invoices/Budget2020/Budget2020-2021.png" target="_blank">Budget Document</a></p>
-        <p><a href="./docs/invoices/Closing 2020-2021 JPW/The Parks revised accounts 2021- Signed (1).pdf" target="_blank">Final Accounts</a></p>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        <p>2021-2022</p>
-        </td>
-        
-        
-
-        
-        <td>
-        <p><a href="./docs/invoices/Budget2021/FlatsBudget2021.jpg" target="_blank">1466</a></p>
-        </td>
-        <td>
-        
-        <p><a href="./docs/invoices/Closing 2021-2022 RR/FlatsClosing2021-2022.jpg" target="_blank">406</a></p>
-        </td>
-        <td>
-        <p>1872</p>
-        </td>
-        <td>
-        <p>Done by RedRock. This year includes CCTV and previous year late invoices and roof works.</p>
-        <p><a href="./docs/invoices/Budget2021/Budget21-22.pdf" target="_blank">Budget Document</a></p>
-        <p><a href="./docs/invoices/Closing 2021-2022 RR/Service Charge Accounts YE 30.06.2022.pdf" target="_blank">Final Accounts</a></p>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        <p>2022-2023</p>
-        </td>
-        <td>
-        
-        <p><a href="./docs/invoices/budget2022/flatBudget2022.png" target="_blank">1563</a></p>
-        </td>
-        
-        <td><p>7.80</p></td>
-        
-        <td><p>1570.8</p></td>
-        <td>
-        <p>Done by Red Rock. The budget contains the interior decoration component.</p>        
-        <p><a href="./docs/invoices/budget2022/Budget 2022-2023.xls" target="_blank">Budget Document</a></p>
-        <p><a href="./docs/invoices/Closing 2022-2023 RR/closing 2022-2023.pdf" target="_blank">Final Accounts</a></p>
-        
-        </td>
-        </tr>
-         <tr>
-        <td>
-        <p>2023-2024</p>
-        </td>
-        <td>
-        
-        <p><a href="./docs/Budget 2023-2024.pdf" target="_blank">1543</a></p>
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>
-        <p>Done by Red Rock. The budget contains the interior decoration component.</p>        
-        <p><a href="./docs/Budget 2023-2024.pdf" target="_blank">Budget Document</a></p>
-        <p><strong>Year not closed yet.</strong></p>
-        
-        </td>
-        </tr>
-        </tbody>
+        <table class="table table-bordered table-striped table-reflow">
+          <thead>
+            <tr>
+              <th>Years</th>
+              <th>Budget Expense</th>
+              <th>Year End Expense</th>
+              <th>Total</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Years"><p>2020-2021</p></td>
+              <td data-label="Budget Expense"><p>1426.68</p></td>
+              <td data-label="Year End Expense"><p>477.87</p></td>
+              <td data-label="Total"><p>1904</p></td>
+              <td data-label="Note">
+                <p>Done by JPW</p>
+                <p><a href="./docs/invoices/Budget2020/Budget2020-2021.png" target="_blank">Budget Document</a></p>
+                <p><a href="./docs/invoices/Closing 2020-2021 JPW/The Parks revised accounts 2021- Signed (1).pdf" target="_blank">Final Accounts</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Years"><p>2021-2022</p></td>
+              <td data-label="Budget Expense"><p><a href="./docs/invoices/Budget2021/FlatsBudget2021.jpg" target="_blank">1466</a></p></td>
+              <td data-label="Year End Expense"><p><a href="./docs/invoices/Closing 2021-2022 RR/FlatsClosing2021-2022.jpg" target="_blank">406</a></p></td>
+              <td data-label="Total"><p>1872</p></td>
+              <td data-label="Note">
+                <p>Done by RedRock. This year includes CCTV and previous year late invoices and roof works.</p>
+                <p><a href="./docs/invoices/Budget2021/Budget21-22.pdf" target="_blank">Budget Document</a></p>
+                <p><a href="./docs/invoices/Closing 2021-2022 RR/Service Charge Accounts YE 30.06.2022.pdf" target="_blank">Final Accounts</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Years"><p>2022-2023</p></td>
+              <td data-label="Budget Expense"><p><a href="./docs/invoices/budget2022/flatBudget2022.png" target="_blank">1563</a></p></td>
+              <td data-label="Year End Expense"><p>7.80</p></td>
+              <td data-label="Total"><p>1570.8</p></td>
+              <td data-label="Note">
+                <p>Done by Red Rock. The budget contains the interior decoration component.</p>
+                <p><a href="./docs/invoices/budget2022/Budget 2022-2023.xls" target="_blank">Budget Document</a></p>
+                <p><a href="./docs/invoices/Closing 2022-2023 RR/closing 2022-2023.pdf" target="_blank">Final Accounts</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Years"><p>2023-2024</p></td>
+              <td data-label="Budget Expense"><p><a href="./docs/Budget 2023-2024.pdf" target="_blank">1543</a></p></td>
+              <td data-label="Year End Expense"><a href="./docs/invoices/Closing 2023-2024 RR/FlatsClosing2023-2024.jpg" target="_blank">10.74</a></td>
+              <td data-label="Total">1544.74</td>
+              <td data-label="Note">
+                <p>Done by Red Rock. The budget contains the interior decoration component.</p>
+                <p><a href="./docs/Budget 2023-2024.pdf" target="_blank">Budget Document</a></p>
+                <p><a href="./docs/invoices/Closing 2023-2024 RR/Accounts2023-2024.pdf" target="_blank">Final Accounts</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Years"><p>2024-2025</p></td>
+              <td data-label="Budget Expense"><p><a href="./docs/invoices/Budget2024/FlatsInvoice.jpg" target="_blank">1535.58</a></p></td>
+              <td data-label="Year End Expense">&nbsp;</td>
+              <td data-label="Total">&nbsp;</td>
+              <td data-label="Note">
+                <p>Done by Red Rock.</p>
+                <p><a href="./docs/invoices/Budget2024/Budget 2024-2025.pdf" target="_blank">(Correction of management fee is included in total £33.47 was credited)</a></p>
+                <p><strong>Year not closed yet.</strong></p>
+              </td>
+            </tr>
+          </tbody>
         </table>
-        <p>&nbsp;</p>
         <p><strong>Charges for Blocks G</strong></p>
-        <table style="border-collapse: collapse;" border="1" cellspacing="10" cellpadding="10">
-        <tbody>
-        <tr>
-        <td>
-        <p><strong>Years</strong></p>
-        </td>
-        <td>
-        <p><strong>Budget Expense</strong></p>
-        </td>
-        <td>
-        <p><strong>Year End Expense</strong></p>
-        </td>
-        <td>
-        <p><strong>Total</strong></p>
-        </td>
-        <td>
-        <p><strong>Note</strong></p>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        <p>2020-2021</p>
-        </td>
-        <td>
-        <p>1920.51</p>
-        </td>
-        <td>
-        <p>550</p>
-        </td>
-        <td>
-        <p>2470.51</p>
-        </td>
-        <td>
-        <p>Done by JPW</p>
-        <p><a href="./docs/invoices/Budget2020/Budget2020-2021.png" target="_blank">Budget Document</a></p>
-        <p><a href="./docs/invoices/Closing 2020-2021 JPW/The Parks revised accounts 2021- Signed (1).pdf" target="_blank">Final Accounts</a></p>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        <p>2021-2022</p>
-        </td>
-        <td>
-        
-        <p><a href="./docs/invoices/Budget2021/blockGBudget2021.png" target="_blank">1842</a></p>
-        </td>
-        <td>
-        
-        <p><a href="./docs/invoices/Closing 2021-2022 RR/BlockGClosing2021-2022.jpg" target="_blank">493</a></p>
-        </td>
-        <td>
-        <p>2335</p>
-        </td>
-        <td>
-        
-        <p>Done by RedRock. This year includes CCTV and previous year late invoices and roof works.</p>
-        <p><a href="./docs/invoices/Budget2021/Budget21-22.pdf" target="_blank">Budget Document</a></p>
-        <p><a href="./docs/invoices/Closing 2021-2022 RR/Service Charge Accounts YE 30.06.2022.pdf" target="_blank">Final Accounts</a></p>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        <p>2022-2023</p>
-        </td>
-        <td>
-        <p></p>
-        <p><a href="./docs/invoices/budget2022/BlockGBudget2022.png" target="_blank">2031</a></p>
-        </td>
-        <td><p>136.85</p></td>
-        <td><p>2167.85</p></td>
-        <td>
-        <p>Done by Red Rock. The budget contains the interior decoration component.</p>        
-        <p><a href="./docs/invoices/budget2022/Budget 2022-2023.xls" target="_blank">Budget Document</a></p>
-        <p><a href="./docs/invoices/Closing 2022-2023 RR/closing 2022-2023.pdf" target="_blank">Final Accounts</a></p>
-        </td>
-        </tr>
-        
-        <tr>
-        <td>
-        <p>2023-2024</p>
-        </td>
-        <td>
-        <p></p>
-        <p><a href="./docs/Budget 2023-2024.pdf" target="_blank">2040</a></p>
-        </td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>
-        <p>Done by Red Rock. The budget contains the interior decoration component.</p>        
-        <p><a href="./docs/Budget 2023-2024.pdf" target="_blank">Budget Document</a></p>
-        <p><strong>Year not closed yet.</strong></p>
-        </td>
-        </tr>
-        
-        </tbody>
+        <table class="table table-bordered table-striped table-reflow">
+          <thead>
+            <tr>
+              <th>Years</th>
+              <th>Budget Expense</th>
+              <th>Year End Expense</th>
+              <th>Total</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Years"><p>2020-2021</p></td>
+              <td data-label="Budget Expense"><p>1920.51</p></td>
+              <td data-label="Year End Expense"><p>550</p></td>
+              <td data-label="Total"><p>2470.51</p></td>
+              <td data-label="Note">
+                <p>Done by JPW</p>
+                <p><a href="./docs/invoices/Budget2020/Budget2020-2021.png" target="_blank">Budget Document</a></p>
+                <p><a href="./docs/invoices/Closing 2020-2021 JPW/The Parks revised accounts 2021- Signed (1).pdf" target="_blank">Final Accounts</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Years"><p>2021-2022</p></td>
+              <td data-label="Budget Expense"><p><a href="./docs/invoices/Budget2021/blockGBudget2021.png" target="_blank">1842</a></p></td>
+              <td data-label="Year End Expense"><p><a href="./docs/invoices/Closing 2021-2022 RR/BlockGClosing2021-2022.jpg" target="_blank">493</a></p></td>
+              <td data-label="Total"><p>2335</p></td>
+              <td data-label="Note">
+                <p>Done by RedRock. This year includes CCTV and previous year late invoices and roof works.</p>
+                <p><a href="./docs/invoices/Budget2021/Budget21-22.pdf" target="_blank">Budget Document</a></p>
+                <p><a href="./docs/invoices/Closing 2021-2022 RR/Service Charge Accounts YE 30.06.2022.pdf" target="_blank">Final Accounts</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Years"><p>2022-2023</p></td>
+              <td data-label="Budget Expense"><p><a href="./docs/invoices/budget2022/BlockGBudget2022.png" target="_blank">2031</a></p></td>
+              <td data-label="Year End Expense"><p>136.85</p></td>
+              <td data-label="Total"><p>2167.85</p></td>
+              <td data-label="Note">
+                <p>Done by Red Rock. The budget contains the interior decoration component.</p>
+                <p><a href="./docs/invoices/budget2022/Budget 2022-2023.xls" target="_blank">Budget Document</a></p>
+                <p><a href="./docs/invoices/Closing 2022-2023 RR/closing 2022-2023.pdf" target="_blank">Final Accounts</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Years"><p>2023-2024</p></td>
+              <td data-label="Budget Expense"><p><a href="./docs/Budget 2023-2024.pdf" target="_blank">2040</a></p></td>
+              <td data-label="Year End Expense"><a href="./docs/invoices/Closing 2023-2024 RR/BlockGClosing2023-2024.jpg" target="_blank">-23.95</a></td>
+              <td data-label="Total">2016.05</td>
+              <td data-label="Note">
+                <p>Done by Red Rock. The budget contains the interior decoration component.</p>
+                <p><a href="./docs/Budget 2023-2024.pdf" target="_blank">Budget Document</a></p>
+                <p><a href="./docs/invoices/Closing 2023-2024 RR/Accounts2023-2024.pdf" target="_blank">Final Accounts</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Years"><p>2024-2025</p></td>
+              <td data-label="Budget Expense"><p><a href="./docs/invoices/Budget2024/BlockedGInvoice.jpg" target="_blank">2013.53</a></p></td>
+              <td data-label="Year End Expense">&nbsp;</td>
+              <td data-label="Total">&nbsp;</td>
+              <td data-label="Note">
+                <p>Done by Red Rock.</p>
+                <p><a href="./docs/invoices/Budget2024/Budget 2024-2025.pdf" target="_blank">(Correction of management fee is included in total £33.47 was credited)</a></p>
+                <p><strong>Year not closed yet.</strong></p>
+              </td>
+            </tr>
+          </tbody>
         </table>
-
-
-
-    
       </div>
     </div>
-  </div>
-  
   </div>
   
         </div>
@@ -967,27 +841,40 @@ This means for a Block G flat leaseholder, the budget 2021 will be <b>£335+£10
           </div>
           <br>
           <ol>
-           <li style="padding: 10px 30px;">Year Ending June 2023 (2022-2023)
+            <li class="mb-3">Year Ending June 2024 (2023-2024)
+              <ol type="a" class="mt-2">
+                 <li><a class="btn" href="./docs/invoices/Closing 2023-2024 RR/Accounts2023-2024.pdf" target="_blank">Accounts</a></li>
+                 <li><a class="btn" href="./docs/invoices/Closing 2023-2024 RR/The Parks BD.xlsx" target="_blank">Working Sheet</a></li>
+                 <li><a class="btn" href="https://workdrive.zoho.eu/file/5jmo35e320c7249ba48efaf4f5ec8cd61c57a" target="_blank">Invoices</a></li>
+                 </ol>
+              </li>
+              <li class="mb-3">Budget 2024-2025
+                <ol type="a">
+                <li><a class="btn" href="./docs/invoices/Budget2024/2024-2025.pdf" target="_blank">Budget 2024-2025</a></li>
+                </ol>
+            </li>
+           <li class="mb-3">Year Ending June 2023 (2022-2023)
              <ol type="a">
                 <li><a class="btn" href="./docs/invoices/Closing 2022-2023 RR/closing 2022-2023.pdf" target="_blank">Accounts</a></li>
-                <li><a class="btn" href="./docs/invoices/Closing 2022-2023 RR/The Parks Balancing Charges + Credits YE 30.06.2023 v2 (002)" target="_blank">Working Sheet</a></li>
+                <!-- The following link appears to be broken due to spaces and no file extension. Please check the file path. -->
+                <li><a class="btn" href="./docs/invoices/Closing 2022-2023 RR/The Parks Balancing Charges + Credits YE 30.06.2023 v2 (002).xlsx" target="_blank" title="Link may be broken">Working Sheet</a></li>
                 <li><a class="btn" href="./docs/invoices/Closing 2022-2023 RR/The parks invoiceBlockG.zip" target="_blank">Invoices Block G</a></li>
                 </ol>
              </li>
              
-          <li style="padding: 10px 30px;">Budget 2023-2024
+          <li class="mb-3">Budget 2023-2024
                 <ol type="a">
                 <li><a class="btn" href="./docs/Budget 2023-2024.pdf" target="_blank">Budget 2023-2024</a></li>
                 <li><a  class="btn" href="./docs/TenantPortions-2023-2024.xlsx" target="_blank">Proportion Sheet</a></li>
                 </ol>
             </li>
-            <li style="padding: 10px 30px;">Resident Meeting 26 June 2023
+            <li class="mb-3">Resident Meeting 26 June 2023
                 <ol type="a">
                 <li><a class="btn" href="./docs/The Parks Minutes of Residents Meeting 26.04.2023.docx" target="_blank">Minutes</a></li>
                 <li><a  class="btn" href="./docs/The Park Ilford-res-meeting-26-04-2023.pptx" target="_blank">Presentation</a></li>
                 </ol>
             </li>
-            <li style="padding: 10px 30px;">Year Ending June 22 2022 RR First Year
+            <li class="mb-3">Year Ending June 22 2022 RR First Year
              <ol type="a">
                 <li><a class="btn" href="./docs/invoices/Closing 2021-2022 RR/Service Charge Accounts YE 30.06.2022.pdf" target="_blank">Accounts</a></li>
                 <li><a class="btn" href="./docs/invoices/Closing 2021-2022 RR/The Parks 30.06.2022 ETB Prepared by RR.xlsx" target="_blank">Working Sheet</a></li>
@@ -995,21 +882,21 @@ This means for a Block G flat leaseholder, the budget 2021 will be <b>£335+£10
                 </ol>
              </li>
                 
-            <li><a class="btn" href="./docs/invoices/budget2022/Budget 2022-2023.xls" target="_blank">Year 2022-23 Budget (RR Second Year Budget) [Click here]</a></li>
-            <li><a class="btn" href="./docs/The Parks Budget Calculations LIVE RUN-21-22.pdf">Year 2021-22 Budget (RR First Year Budget)[Click here]</a></li>
+            <li class="mb-3"><a class="btn" href="./docs/invoices/budget2022/Budget 2022-2023.xls" target="_blank">Year 2022-23 Budget (RR Second Year Budget) [Click here]</a></li>
+            <li class="mb-3"><a class="btn" href="./docs/The Parks Budget Calculations LIVE RUN-21-22.pdf">Year 2021-22 Budget (RR First Year Budget)[Click here]</a></li>
            
-           <li><a class="btn" href="./docs/The Parks 30.06.2021 Section 20BLetter.docx" target="_blank">Year Ending June 2021 Section 20B letter</a> and <a class="btn" href="./docs/The Parks 30.06.2021 Section 20B.pdf">Year Ending June 2021 Section 20B accounts document</a></li>
-           <li><a class="btn" href="./docs/year ended june 2021.pdf" target="_blank">Year Ending June 2021 Accounting Document[Now available]</a></li>
-            <li><a class="btn" href="./docs/Budget 2020-2021.pdf" target="_blank">Year 2020-21 Budget [Click here]</a></li>
+           <li class="mb-3"><a class="btn" href="./docs/The Parks 30.06.2021 Section 20BLetter.docx" target="_blank">Year Ending June 2021 Section 20B letter</a> and <a class="btn" href="./docs/The Parks 30.06.2021 Section 20B.pdf">Year Ending June 2021 Section 20B accounts document</a></li>
+           <li class="mb-3"><a class="btn" href="./docs/year ended june 2021.pdf" target="_blank">Year Ending June 2021 Accounting Document[Now available]</a></li>
+            <li class="mb-3"><a class="btn" href="./docs/Budget 2020-2021.pdf" target="_blank">Year 2020-21 Budget [Click here]</a></li>
 
 
-            <li><a class="btn" href="./docs/YearEndAccounting-yearended-2020.pdf" target="_blank">Year Ended June 2020 Accounting Document[Click here]</a></li>
-             <li><a class="btn" href="./docs/Budget 2020-2021.pdf" target="_blank">Year 2019-2020 Budget [Click here]</a></li>
+            <li class="mb-3"><a class="btn" href="./docs/YearEndAccounting-yearended-2020.pdf" target="_blank">Year Ended June 2020 Accounting Document[Click here]</a></li>
+             <li class="mb-3"><a class="btn" href="./docs/Budget 2020-2021.pdf" target="_blank">Year 2019-2020 Budget [Click here]</a></li>
 
            
            
-            <li><a class="btn" href="./docs/year ended June 2019.pdf" target="_blank">Year Ended June 2019 Accounting Document[Click here]</a></li>
-            <li><a class="btn" href="./docs/year ended June 2018.pdf" target="_blank">Year Ended June 2018 Accounting Document[Click here]</a></li>
+            <li class="mb-3"><a class="btn" href="./docs/year ended June 2019.pdf" target="_blank">Year Ended June 2019 Accounting Document[Click here]</a></li>
+            <li class="mb-3"><a class="btn" href="./docs/year ended June 2018.pdf" target="_blank">Year Ended June 2018 Accounting Document[Click here]</a></li>
            
            
            
@@ -1035,29 +922,29 @@ This means for a Block G flat leaseholder, the budget 2021 will be <b>£335+£10
                     <!-- Content Info -->
                     <div class="contact-info_area">
                       <div class="contact-info">
-                        <i class=""></i>
+                        <i class="lni-cog"></i>
                         <h5>Managing Agent</h5>
                         <p>Please contact the managing agent for any questions/query/help or if you have concerns about cleaning/ground maintenance/repairs.<br>
   <a href="mailto:property@rrpm.co.uk">  property@rrpm.co.uk</a> <br>0333 123 5670</p>
-  <br>
+                      </div>
+                      <div class="contact-info">
+                        <i class="lni-bug"></i>
                         <h5>Log the Issue</h5>
                         <p>We now have logging system where you can log the issue. This will allow visiblity to the Directors and together with the Managing Agent they can get the things done with tracking and we all will have evidence of when the issue was logged and how long it took to find the resolution. Red Rock will track the issue log and should post the replies there. This will also help residents to know if the same issue they are facing, alredy been logged by someone and they will be able to post their comments.<br>
   <a  target="_blank" href="https://github.com/theparksilford/Issues/issues">Click here to see the Issue log</a></p>
                       </div>
                       <!-- Content Info -->
                       <div class="contact-info">
-                        <i class=""></i>
+                        <i class="lni-users"></i>
                         <h5>Directors</h5>
                         <p>If you need to contact the directors, Please email<br> <a href="mailto:Management.Team@theparksilford.org.uk"> Management.Team@theparksilford.org.uk</a></p>
                       </div>
                       <!-- Content Info -->
                       <div class="contact-info">
-                        <i class=""></i>
+                        <i class="lni-whatsapp"></i>
                         <h5>Resident Group</h5>
-                        <p>If you want to join the Resident Group on Whatsapp<br><a href="https://chat.whatsapp.com/KnIf5XEc9hMECos7ISw9wt"> <b>Click Here</b></a></p>
+                        <p>If you want to join the Resident Group on Whatsapp<br><a href="https://chat.whatsapp.com/KnIf5XEc9hMECos7ISw9wt"> <strong>Click Here</strong></a></p>
                       </div>
-                      <!-- Icon -->
-                  
                 </div>
               </div>
              
@@ -1070,9 +957,7 @@ This means for a Block G flat leaseholder, the budget 2021 will be <b>£335+£10
       <div class="container-fluid ml-1 mr-1">
         <div class="row">
           <div class="col-12 padding-0">
-            <object style="border:0; height: 450px; width: 100%;"
-            data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1240.519798225619!2d0.08590412096789983!3d51.549172929787964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a67bad3e66fd%3A0x27aaa37661a9dc44!2s8%20Blackthorn%20Rd%2C%20Ilford%20IG1%202LB!5e0!3m2!1sen!2suk!4v1631659037631!5m2!1sen!2suk">
-          </object>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1240.519798225619!2d0.08590412096789983!3d51.549172929787964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a67bad3e66fd%3A0x27aaa37661a9dc44!2s8%20Blackthorn%20Rd%2C%20Ilford%20IG1%202LB!5e0!3m2!1sen!2suk!4v1631659037631!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map of The Parks Ilford"></iframe>
         </div>
       </div>
     </section>
@@ -1086,7 +971,7 @@ This means for a Block G flat leaseholder, the budget 2021 will be <b>£335+£10
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               <h3>The Parks Ilford</h3>
-                          <img width="200px" src="images/qr-code.png"alt="qrcode">
+                          <img width="200px" src="images/qr-code.png" alt="QR code to join resident Whatsapp group">
 
             </div>
           </div>
@@ -1102,26 +987,6 @@ This means for a Block G flat leaseholder, the budget 2021 will be <b>£335+£10
               <div class="site-info float-left">
                 <p>Crafted by Areesha Durrani</p>
               </div>
-              <!--<div class="float-right">
-                <ul class="nav nav-inline">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">About Prime</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">TOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Return Policy</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-              <-->
             </div>
           </div>
         </div>
@@ -1164,9 +1029,10 @@ This means for a Block G flat leaseholder, the budget 2021 will be <b>£335+£10
     <script src="js/contact-form-script.js"></script>
     <script src="js/main.js"></script>
     <script>
-    $('#marq1').width($('#h3').width());
-    $("body").css({'padding-top': $('nav.navbar').height()});
-
+      $(document).ready(function() {
+        // Set body padding to prevent content from being hidden by the fixed navbar
+        $("body").css({'padding-top': $('nav.navbar').height()});
+      });
     </script>
   </body>
 </html>
